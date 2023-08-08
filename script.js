@@ -25,8 +25,6 @@ console.log(exemplo(20))
 const exemplo3 = (num)=>{return num * num;}
 console.log(exemplo(20))
 
-
-
 function inserir(){
     let numero = document.getElementById("posicao").value -1
     let novo = document.getElementById("novo").value
@@ -34,3 +32,14 @@ function inserir(){
 
 }
 
+function mostrar(){
+    let numero = document.getElementById("numero").value -1
+    let mes = document.getElementsByTagName("li")[numero].innerHTML
+    document.getElementById("resultado").innerHTML = mes
+}
+
+//document.querySelector("#btnMsg").onclick = ()=>alert("testes")
+
+document.querySelector("#btnMsg").addEventListener('keyDown', function(){
+    alert("teste novamente")
+})
